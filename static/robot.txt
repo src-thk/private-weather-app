@@ -1,0 +1,5 @@
+User-Agent: *
+Disallow: 
+Disallow: /../templates/layout.html
+Disallow: /../templates/error.html
+Disallow: /../templates/result.html

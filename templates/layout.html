@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html  >
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="{{ url_for('static', filename='assets/images/icon.svg') }}" type="image/x-icon">
+  <meta name="description" content="WeatherUI built to be beautiful on every screen ft. Undraw. WeatherUI doesn't require your location making it truly private.">
+  
+  
+  <title>{% block title %} WeatherUI | Beautiful, Minimal & Private Weather Screen. {% endblock title %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='assets/web/icons/icons.css') }}">
+ 
+  <link rel="stylesheet" href="{{ url_for('static', filename='assets/tether/tether.min.css') }}">
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='assets/bootstrap/css/bootstrap.min.css') }}">
+  
+  <link rel="stylesheet" href="{{ url_for('static', filename='assets/bootstrap/css/bootstrap-grid.min.css') }}">
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='assets/bootstrap/css/bootstrap-reboot.min.css') }}">
+  
+  <link rel="stylesheet" href="{{ url_for('static', filename='assets/dropdown/css/style.css') }}">
+  
+  <link rel="stylesheet" href="{{ url_for('static', filename='assets/socicon/css/styles.css') }}">
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='assets/theme/css/style.css') }}">
+  
+  <link rel="preload" as="style" href="{{ url_for('static', filename='assets/weatherui/css/mbr-additional.css') }}"><link rel="stylesheet" href="{{ url_for('static', filename='assets/weatherui/css/mbr-additional.css') }}" type="text/css">
+  
+  
+  {% block header %}
+
+  {% endblock header %}
+  
+</head>
+<body>
+    <section class="menu menu1 cid-scV92BTYME" once="menu" id="menu1-8">
+        <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
+            <div class="container">
+                <div class="navbar-brand">
+                    
+                    <span class="navbar-caption-wrap"><a class="navbar-caption text-black text-primary display-7" href="/">WeatherUI</a></span>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="/about">
+                                About us</a></li></ul>
+                    
+                    
+                </div>
+            </div>
+        </nav>
+    </section>
+  
+        {% block content %}
+
+
+        {% endblock content %}
+
+    <section class="footer3 cid-scUzK2aBhS mbr-reveal" once="footers" id="footer3-2">
+        <div class="container-fluid">
+            <div class="media-container-row align-center mbr-white">
+                <div class="row row-copirayt">
+                    <p class="mbr-text mb-0 mbr-fonts-style mbr-white align-center display-7"><strong>
+                        © Built and Designed by Sarthak Tandon.</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="{{ url_for('static', filename='assets/popper/popper.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/tether/tether.min.js') }}"></script> 
+    <script src="{{ url_for('static', filename='assets/bootstrap/js/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/smoothscroll/smooth-scroll.js') }}"></script> 
+    <script src="{{ url_for('static', filename='assets/parallax/jarallax.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/dropdown/js/nav-dropdown.js') }}"></script> 
+    <script src="{{ url_for('static', filename='assets/dropdown/js/navbar-dropdown.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/touchswipe/jquery.touch-swipe.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/theme/js/script.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/formoid/formoid.min.js') }}"></script>  
+  
+</body>
+</html>
