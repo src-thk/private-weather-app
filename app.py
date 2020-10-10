@@ -83,4 +83,4 @@ def about():
 
 
 if __name__ == "__main__":
-    app.run(debug=True, host='localhost', port=9874)
+    app.run()
