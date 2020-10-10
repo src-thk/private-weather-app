@@ -5,7 +5,7 @@
 
 
 {% block content %}  
-    <section class="header3 cid-scV6T3Vs8x mbr-fullscreen" id="header3-7" style="background-image: url('{{url_for('static', filename='assets/images/raining.svg')}}')">
+    <section class="header3 cid-scV6T3Vs8x mbr-fullscreen" id="header3-7" style="background-image: url('static/assets/images/{{background_image}}')">
 
         
 
@@ -16,7 +16,7 @@
                 <div class="col-12 col-lg-6">
                     <h1 class="mbr-section-title mbr-fonts-style mb-3 display-1"><strong>In {{city}} it is {{discription}} at {{temp}} °C</strong></h1>
                     
-                    <p class="mbr-text mbr-fonts-style display-7">with a <strong>low of {{temp_min}}&nbsp;°C</strong> and <strong>high of {{temp_max}}</strong>&nbsp;°C. <strong>Feels like&nbsp; {{feels_like}}&nbsp;°C</strong>.</p>
+                    <p class="mbr-text mbr-fonts-style display-7">with a <strong>low of {{temp_min}}&nbsp;°C</strong> and <strong>high of {{temp_max}} &nbsp;°C</strong>. <strong>Feels like&nbsp; {{feels_like}}&nbsp;°C</strong>.</p>
                     
                 </div>
             </div>
@@ -40,7 +40,7 @@
                             <div class="iconfont-wrapper">
                                 <span class="mbr-iconfont mobi-mbri-preview mobi-mbri" style="color: rgb(255, 255, 255); fill: rgb(255, 255, 255);"></span>
                             </div>
-                            <h5 class="card-title mbr-fonts-style display-7"><strong>Visibility is 4000 meters</strong></h5>
+                            <h5 class="card-title mbr-fonts-style display-7"><strong>Visibility is {{visibility}} meters</strong></h5>
                             
                         </div>
                     </div>
@@ -51,7 +51,7 @@
                             <div class="iconfont-wrapper">
                                 <span class="mbr-iconfont mobi-mbri-hot-cup mobi-mbri" style="color: rgb(255, 255, 255); fill: rgb(255, 255, 255);"></span>
                             </div>
-                            <h5 class="card-title mbr-fonts-style display-7"><strong>Humidity is 49%</strong></h5>
+                            <h5 class="card-title mbr-fonts-style display-7"><strong>Humidity is {{humidity}}%</strong></h5>
                             
                         </div>
                     </div>
@@ -62,7 +62,7 @@
                             <div class="iconfont-wrapper">
                                 <span class="mbr-iconfont mobi-mbri-globe mobi-mbri" style="color: rgb(255, 255, 255); fill: rgb(255, 255, 255);"></span>
                             </div>
-                            <h5 class="card-title mbr-fonts-style display-7"><strong>Wind of 1 m/s</strong></h5>
+                            <h5 class="card-title mbr-fonts-style display-7"><strong>Wind of {{wind_speed}} m/s</strong></h5>
                             
                         </div>
                     </div>
